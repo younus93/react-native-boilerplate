@@ -6,19 +6,27 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: 'tomato'
+    backgroundColor: 'purple'
   }
 });
 
-class LoginScreen extends Component {
+class SplashScreen extends Component {
+
+  componentDidMount() {
+    const { navigate } = this.props.navigation;
+    setTimeout(() => {
+      navigate('Login')
+    }, 1500);
+  }
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Login</Text>
+        <Text>Beebuck</Text>
       </View>
     );
   }
 }
 
 
-export default LoginScreen;
+export default SplashScreen;

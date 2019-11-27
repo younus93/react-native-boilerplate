@@ -1,11 +1,11 @@
 import { createSwitchNavigator, createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 
-import SplashScreen from "../screens/splash/splash-screen";
-import HomeScreen from "../screens/splash/home-screen";
+import SplashScreen from "../container/Splash/splash-screen";
+import HomeScreen from "../container/Splash/home-screen";
 
-import LoginScreen from "../screens/login/login-screen";
-import DashboardScreen from "../screens/dashboard/dashboard-screen";
+import LoginScreen from "../container/Login";
+import DashboardScreen from "../container/Dashboard/dashboard-screen";
 
 const AuthStack = createStackNavigator(
   {

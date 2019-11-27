@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createMaterialBottomTabNavigator } from 'react-navigation-material-bottom-tabs';
-import HomeScreen from '../splash/home-screen';
+import HomeScreen from '../Splash/home-screen';
 
 const styles = StyleSheet.create({
   container: {
